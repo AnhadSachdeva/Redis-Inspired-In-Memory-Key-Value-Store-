@@ -1,6 +1,7 @@
 # Redis-Inspired-In-Memory-Key-Value-Store-
 
-How to run the code:
+# How to run the code:
+
 g++ -std=c++11 -pthread -o redis_server server.cpp avl.cpp hashtable.cpp heap.cpp thread_pool.cpp zset.cpp
 
 ./redis_server
