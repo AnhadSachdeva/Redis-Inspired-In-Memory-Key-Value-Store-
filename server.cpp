@@ -735,7 +735,7 @@ static void connection_io(Conn *conn) {
     }
 }
 
-const uint64_t k_idle_timeout_ms = 10 * 1000; // 10 seconds
+const uint64_t k_idle_timeout_ms = 5 * 1000; // 5 seconds
 
 static uint32_t next_timer_ms() {
     uint64_t now_us = get_monotonic_usec();
