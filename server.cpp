@@ -264,6 +264,7 @@ static void do_get(std::vector<std::string> &cmd, std::string &out) {
 }
 
 static void do_set(std::vector<std::string> &cmd, std::string &out) {
+    printf("Received SET command with key: %s and value: %s\n", cmd[1].c_str(), cmd[2].c_str());
     Entry key;
     key.key.swap(cmd[1]);
     key.node.hcode = str_hash((uint8_t *)key.key.data(), key.key.size());
@@ -734,7 +735,7 @@ static void connection_io(Conn *conn) {
     }
 }
 
-const uint64_t k_idle_timeout_ms = 5 * 1000;
+const uint64_t k_idle_timeout_ms = 10 * 1000; // 10 seconds
 
 static uint32_t next_timer_ms() {
     uint64_t now_us = get_monotonic_usec();
