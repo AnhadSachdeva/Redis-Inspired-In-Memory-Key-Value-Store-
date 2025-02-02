@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/lappy/Desktop/projects/Redis-Inspired-In-Memory-Key-Value-Store-",
+      "program": "/Users/lappy/Desktop/projects/Redis-Inspired-In-Memory-Key-Value-Store-/build/Debug/outDebug"
+    }
+  ]
+}
