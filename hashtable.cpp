@@ -123,3 +123,5 @@ void hm_destroy(HMap *hmap) {
     free(hmap->ht2.tab);
     *hmap = HMap{};
 }
+
+
